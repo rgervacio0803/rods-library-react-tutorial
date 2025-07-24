@@ -20,6 +20,10 @@ export default function Bookinfo({ books }) {
               <figure className="book__selected--figure">
                 <img src="https://m.media-amazon.com/images/I/61mIq2iJUXL._AC_UF1000,1000_QL80_.jpg" alt="" className="book__selected--img" />
                 </figure>  
+               <div className="book__selected--description">
+                <h2 className="book selected--title">Crack the Coding Interview</h2>
+                <FontAwesomeIcon icon="star" />
+                </div> 
             </div>
           </div>
         </div>

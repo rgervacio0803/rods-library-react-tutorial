@@ -14,7 +14,6 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/books" exact render={() => <Books books={books} />}/>
         <Route path="/books/1" render={() => <Bookinfo books={books} />}/>
-        <Home />
         <Footer />
       </div>
     </Router>
