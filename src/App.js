@@ -16,17 +16,14 @@ function App() {
   }
 
 function changeQuantity(book, quantity) {
-  setCart(cart.map(item => {
-   if (item.id === book.id) {
-    return {
+  setCart(cart.map(item => item.id === book.id
+    ? {
       ...item,
       quantity: +quantity,
     }
-   }
-   else {
-    return item
-   }
-  }))
+    : item 
+  )
+  );
 }
 
   useEffect(() => {
